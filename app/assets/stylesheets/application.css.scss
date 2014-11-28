@@ -1,0 +1,16 @@
+@charset 'utf-8';
+
+@import 'normalize-rails';
+@import 'bourbon';
+@import 'base/grid-settings';
+@import 'neat';
+@import 'base/base';
+@import 'navigation';
+@import 'footer';
+@import 'home';
+
+.garters-wrapper {
+  @include outer-container;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}

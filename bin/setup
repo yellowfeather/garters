@@ -19,3 +19,25 @@ mkdir -p .git/safe
 # Only if this isn't CI
 # if [ -z "$CI" ]; then
 # fi
+          
+if heroku join --app garters-staging &> /dev/null; then
+  git remote add staging git@heroku.com:garters-staging.git || true
+  printf 'You are a collaborator on the "garters-staging" Heroku app
+'
+else
+  printf 'Ask for access to the "garters-staging" Heroku app
+'
+fi
+
+          
+if heroku join --app garters-production &> /dev/null; then
+  git remote add production git@heroku.com:garters-production.git || true
+  printf 'You are a collaborator on the "garters-production" Heroku app
+'
+else
+  printf 'Ask for access to the "garters-production" Heroku app
+'
+fi
+
+
+          git config heroku.remote staging

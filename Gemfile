@@ -7,6 +7,7 @@ gem "delayed_job_active_record"
 gem "flutie"
 gem "honeybadger"
 gem "jquery-rails"
+gem "neat"
 gem "normalize-rails", "~> 3.0.0"
 gem "pg"
 gem "puma"
@@ -20,7 +21,7 @@ gem "sprockets", ">= 3.0.0"
 gem "sprockets-es6"
 gem "suspenders"
 gem "title"
-gem 'turbolinks', '~> 5.0.0'
+gem "turbolinks", '~> 5.0.0'
 gem "uglifier"
 
 group :development do
